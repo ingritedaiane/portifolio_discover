@@ -1,0 +1,361 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+  }
+
+body {
+    background-color: var(--body-bg-color);
+    font-family: 'Merriweather Sans', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "header main" 
+    "header main"
+    "aside main"
+    "footer footer"
+    ;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    grid-area: header;
+    color: var(--text-color);
+    text-align: center;
+    background-color: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 348px;
+    height: 292px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+header figure {
+    margin-top: 50px;
+}
+
+header h1 {
+    font-size: 23px;
+    margin: 20px 0 10px 0;
+}
+
+header p {
+    font-size: 13px;
+}
+
+main {
+    grid-area: main;
+    color: var(--text-color);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+}
+
+.myprojects, .recentposts {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    width: 952px;
+    height: 86px;
+    margin: 40px 40px 31px 50px;
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+}
+
+.myprojects h2, .recentposts h2 {
+    margin:  30px 680px 30px 30px ;
+} 
+
+.myprojects span {
+    margin-top: 30px;
+}
+
+#projects {
+    grid-area: main;
+    display: inline-table;
+    margin-left: 20px;
+}
+
+#projects a  {
+    text-decoration: none;
+    color: var(--text-color);
+    display: inline;
+    margin: 20px 0px 20px 30px;
+    font-weight: 700;
+}
+
+#projects img  {
+    vertical-align: sub;
+    align-content: center;
+    margin: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.projectone, .projecttwo {
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 461px;
+    height: 186px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.projectone, .projecttwo, p {
+    margin-left: 30px;
+    font-size: 14px;
+    
+}
+
+#projects span {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+#projects span p img {
+    width: 15px;
+    height: 15px;
+}
+
+#projects span p:nth-last-child(1){
+    margin-left: 220px;
+}
+
+#post {
+    grid-area: main;
+    height: 201px;
+    width: 952px;
+    border-radius: 20px;
+    background-color: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+    display: flex;
+
+}
+
+#post img {
+    margin: 30px 0 42px 0px;
+    height:128px;
+    width: 128px;
+}
+
+.infos {
+    width: 612px;
+    height: 129px;
+    color: var(--text-color);
+    margin-top: 30px;
+}
+
+.infos p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 0;
+    margin-bottom: 0;
+
+}
+
+.infos .data {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.infos .description {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+
+.infos span {
+    word-spacing: 20px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+
+aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.links {
+    width: 348px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+
+}
+
+.links ul li {
+    list-style: none;
+    margin-top: 30px; 
+    margin-left: 50px;
+}
+
+.links a {
+    grid-area: aside;
+    text-decoration: none;
+    line-height: 28px;
+    color: var(--text-color);
+}
+
+.links img {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.technologies {
+    grid-area: aside;
+    margin-top: 30px;
+    width: 348px;
+    height: 208px; 
+    border-radius: 20px;
+    background-color: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.technologies h2 {
+    color: var(--text-color);
+    font-size: 20px;
+    margin-left: 30px;
+
+}
+
+.technologies ul {
+    list-style: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    margin: 15px;
+}
+
+.technologies li {
+    background-color: var(--bg-techs);
+    border-radius: 30px;
+    width: 86px;
+    height: 24px;
+    padding: 6px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.experiences {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 348px;
+    height: 349px;
+    border-radius: 20px;
+    background-color: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.experiences h2 {
+    color: var(--text-color);
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.experiences  ul li {
+    font-size: 14px;
+    line-height: 5px;
+    margin-left: 50px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.experiences p, .education p {
+    margin-left: 30px;
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 100;
+    color:var(--text-color)
+}
+
+.education {
+    width: 348px;
+    height: 352px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.education h2 {
+    color: var(--text-color);
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.education ul li {
+    margin-left: 50px;
+    line-height: 5px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    height: 30px;
+    background-color: #302F3D;
+    border: 2px solid #837E9F;
+    color: #a9a3cb;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #a9a3cb;
+    margin-left: 5px;
+}
+
+ footer img {
+    height: 20px;
+    align-items: center;
+    margin-left: 5px;
+    margin-bottom: 2px;
+ }
