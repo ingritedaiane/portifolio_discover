@@ -1,7 +1,7 @@
 # Portifolio 
 <div align="center">
 <h1> Desafio fornecido pela Rocketseat através do programa de ensino Discover</h1>
-<img src="#" width="800px"/>
+<img src="https://repository-images.githubusercontent.com/651731395/298ddc5e-ffcd-477d-9409-0fdbfb1911ac" width="600px"/>
 
 ## 🚀 Techs Utilizadas:
 <div style="display: inline_block">
