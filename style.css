@@ -96,7 +96,7 @@ main {
 }
 
 #projects img  {
-    vertical-align: sub;
+    vertical-align: -30%;
     align-content: center;
     margin: 2px;
     width: 20px;
